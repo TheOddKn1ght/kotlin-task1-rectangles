@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyRectangles</string>
+    <string name="addButtonText">Add</string>
+</resources>
