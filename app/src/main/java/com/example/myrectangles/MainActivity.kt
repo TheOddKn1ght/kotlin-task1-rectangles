@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         addButton.setOnClickListener {
             val newItem = Item(items.size, items.size % 2 == 0)
             items.add(newItem)
-            itemAdapter.notifyDataSetChanged()
+            itemAdapter.notifyItemInserted(items.size - 1)
         }
     }
 
