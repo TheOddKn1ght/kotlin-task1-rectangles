@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun getSpanCount(): Int{
         val orientation = resources.configuration.orientation
-        return if (orientation == Configuration.ORIENTATION_LANDSCAPE) 4 else 3
+        return if (orientation == Configuration.ORIENTATION_LANDSCAPE) resources.getInteger(R.integer.landscape_grid)
+            else resources.getInteger(R.integer.portrait_grid)
     }
 
 }
